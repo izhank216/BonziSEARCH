@@ -8,13 +8,14 @@ BonziSEARCH - Your best buddy on the search!
 
 - Node.js
 - YaCy
-
+- Git
+  
 ## Install dependencies
 
 1. Clone the repository:
 
 
-`git clone https://github.com/yourusername/bonzisearch.git`
+`git clone https://github.com/izhank216/BonziSEARCH/`
 
 `cd bonzisearch`
 
