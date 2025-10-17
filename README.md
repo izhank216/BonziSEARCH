@@ -9,8 +9,6 @@ BonziSEARCH - Your best buddy on the search!
 - Node.js
 - YaCy
 
-Here’s a short “Install dependencies” section for your README:
-
 ## Install dependencies
 
 
