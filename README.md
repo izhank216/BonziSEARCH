@@ -19,7 +19,6 @@ BonziSEARCH - Your best buddy on the search!
 
 2. Install Node.js packages:
 
-```bash
 `npm install`
 
 
@@ -31,14 +30,25 @@ Make sure it can be started via startYACY.bat
 
 Update the path in server.js if your installation is not at E:\yacy\
 
-
 ## Features
 
-- Web search powered by YaCy
-- Media search powered by Openverse API
-- Bonzi-themed interface with Comic Sans, purple colors, and Bonzi GIF animation
-- Media toggle button for image search
-- Loading animation before displaying results
+Web search powered by YaCy
+Media search powered by Openverse API
+Bonzi-themed interface with Comic Sans, purple colors, and Bonzi GIF animation
+Media toggle button for image search
+Loading animation before displaying results
 
+## How to Run
+
+Start the server:
+
+`node server.js`
+
+
+Open your browser at `http://localhost:3000`
+
+Enter a search query and click Search
+Click Media to toggle image search
+Enjoy the Bonzi Buddy animation during loading!
 - 
 
