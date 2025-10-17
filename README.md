@@ -11,17 +11,16 @@ BonziSEARCH - Your best buddy on the search!
 
 ## Install dependencies
 
-
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/bonzisearch.git
-cd bonzisearch
+`git clone https://github.com/yourusername/bonzisearch.git`
+`cd bonzisearch`
 
 2. Install Node.js packages:
 
 ```bash
-npm install
+`npm install`
 
 
 3. Install YaCy:
