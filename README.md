@@ -15,6 +15,7 @@ BonziSEARCH - Your best buddy on the search!
 
 
 `git clone https://github.com/yourusername/bonzisearch.git`
+
 cd bonzisearch
 
 2. Install Node.js packages:
