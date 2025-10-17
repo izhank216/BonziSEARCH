@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BonziSEARCH</title>
+<style>
+    body { 
+        font-family: 'Comic Sans MS', cursive; 
+        text-align: center; 
+        background-color: #f0f0f0; 
+        margin: 0; 
+        padding: 0; 
+    }
+    h1 { 
+        color: #4B0082; 
+        margin-top: 50px; 
+        font-size: 60px; 
+        text-shadow: 2px 2px #aaa; 
+    }
+    #search-container { 
+        margin-top: 50px; 
+    }
+    #search-box { 
+        width: 300px; 
+        padding: 10px; 
+        font-size: 20px; 
+        font-family: Tahoma, sans-serif; 
+        border: 2px solid #4B0082; 
+        border-radius: 10px; 
+        outline: none; 
+    }
+    .search-button, .media-button { 
+        padding: 10px 20px; 
+        font-size: 20px; 
+        font-family: Tahoma, sans-serif; 
+        margin-left: 10px; 
+        border: none; 
+        border-radius: 10px; 
+        cursor: pointer; 
+        transition: background-color 0.2s; 
+    }
+    .search-button { 
+        background-color: #4B0082; 
+        color: white; 
+    }
+    .search-button:hover { 
+        background-color: #6A0DAD; 
+    }
+    .media-button { 
+        background-color: #ccc; 
+        color: black; 
+    }
+    .media-button.active { 
+        background-color: #4B0082; 
+        color: white; 
+    }
+</style>
+</head>
+<body>
+    <h1>BonziSEARCH</h1>
+    <div id="search-container">
+        <input type="text" id="search-box" placeholder="Search with Bonzi!">
+        <button class="search-button" id="search-button">Search</button>
+        <button class="media-button" id="media-button">Media</button>
+    </div>
+
+    <script>
+        const searchButton = document.getElementById('search-button');
+        const searchBox = document.getElementById('search-box');
+        const mediaButton = document.getElementById('media-button');
+
+        let mediaMode = false;
+
+        // Toggle media mode
+        mediaButton.addEventListener('click', () => {
+            mediaMode = !mediaMode;
+            mediaButton.classList.toggle('active', mediaMode);
+        });
+
+        function performSearch() {
+            const query = encodeURIComponent(searchBox.value.trim());
+            if (!query) return;
+            // Always go through /loading
+            window.location.href = `/loading?q=${query}&media=${mediaMode}`;
+        }
+
+        searchButton.addEventListener('click', performSearch);
+
+        searchBox.addEventListener('keypress', (e) => {
+            if(e.key === 'Enter') performSearch();
+        });
+    </script>
+</body>
+</html>

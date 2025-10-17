@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BonziSEARCH - Loading</title>
+<style>
+    body { 
+        font-family: 'Comic Sans MS', cursive; 
+        text-align: center; 
+        background: #f0f0f0; 
+        margin:0; 
+        padding:0; 
+    }
+    h1 { 
+        color: #4B0082; 
+        margin-top: 50px; 
+        font-size: 50px; 
+        text-shadow: 2px 2px #aaa; 
+    }
+    #loading { 
+        margin-top: 50px; 
+        font-size: 24px; 
+    }
+    #bonzi-gif {
+        margin-top: 30px;
+        width: 200px;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+    <h1>BonziSEARCH</h1>
+    <div id="loading">Bonzi is searching the web for you...</div>
+    <img id="bonzi-gif" src="https://media.tenor.com/0R9Lc0Mz_0sAAAAM/bonzi-bonzibuddy.gif" alt="Bonzi Buddy GIF">
+
+    <script>
+        // Read query and media flag from URL
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get('q') || '';
+        const media = params.get('media') === 'true';
+
+        setTimeout(() => {
+            if (!query) return;
+            const target = media ? `/media?q=${encodeURIComponent(query)}` : `/search?q=${encodeURIComponent(query)}`;
+            window.location.href = target;
+        }, 2000); // 2s Bonzi animation
+    </script>
+</body>
+</html>
