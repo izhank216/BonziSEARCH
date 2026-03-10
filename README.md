@@ -1,6 +1,7 @@
 # BonziSEARCH
 BonziSEARCH - Your best buddy on the search!
 
+![Logo](./logo.webp)
 
 ![BonziGIF](https://media.tenor.com/0R9Lc0Mz_0sAAAAM/bonzi-bonzibuddy.gif)
 
