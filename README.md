@@ -1,5 +1,5 @@
 # BonziSEARCH
-BonziSEARCH - Your best buddy on the search!
+BonziSEARCH - Your best search engine on the internet!
 
 ![Logo](./logo.webp)
 
