@@ -1,7 +1,7 @@
 # BonziSEARCH
 BonziSEARCH - Your best search engine on the internet!
 
-![Logo](./logo.webp)
+![Logo](./www/assets/logo.webp)
 
 ![BonziGIF](https://media.tenor.com/0R9Lc0Mz_0sAAAAM/bonzi-bonzibuddy.gif)
 
